@@ -6,8 +6,7 @@ type movies{
 }
 
 type Query{
-    Movies(id:Int!) : movies
-    Mutation(name : String!,score:Int!) : movies
+    Movies : [movies]
 }
 type Mutation{
     delMovise(id:Int!) : [movies]!

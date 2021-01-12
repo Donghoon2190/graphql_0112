@@ -25,6 +25,9 @@ export const getById = id => {
     return filteredPeople[0];
 };
 
+export const getMovie = () => {
+    return movies;
+}
 export const addMovise = (name, score) => {
     movies.push({
         id: movies.length,
