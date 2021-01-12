@@ -1,16 +1,12 @@
 
-import { delMovise, addMovise, getMovie } from "./db";
+import { getMovie } from "./db";
 
 
 const resolvers = {
     Query: {
-        Movies: () => getMovie()
-    },
-    Mutation: {
-        addMovise: (_, { name, score }) => addMovise(name, score),
-        delMovise: (_, { id }) => delMovise(id),
+        Movies: (_, { rating, limit }) => getMovie(rating, limit)
+
     }
 }
-
 
 export default resolvers;

@@ -1,14 +1,13 @@
 
-type movies{
+type aovies{
     id: Int!
-    name: String!
-    score: Int!
+    title: String!
+    rating: Float!
+    summary: String!
+    language: String!
+    medium_cover_image: String!
 }
 
 type Query{
-    Movies : [movies]
-}
-type Mutation{
-    delMovise(id:Int!) : [movies]!
-    addMovise(name : String!,score:Int!) : [movies]
+    Movies(reting:Float!,limit:Int!) : [aovies]!
 }
