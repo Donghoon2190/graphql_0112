@@ -1,0 +1,15 @@
+
+type movies{
+    id: Int!
+    name: String!
+    score: Int!
+}
+
+type Query{
+    Movies(id:Int!) : movies
+    Mutation(name : String!,score:Int!) : movies
+}
+type Mutation{
+    delMovise(id:Int!) : [movies]!
+    addMovise(name : String!,score:Int!) : [movies]
+}
