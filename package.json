@@ -1,0 +1,19 @@
+{
+  "name": "graphql_0112",
+  "version": "1.0.0",
+  "description": "start graphql",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Donghoon2190/graphql_0112.git"
+  },
+  "author": "DonghoonKang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Donghoon2190/graphql_0112/issues"
+  },
+  "homepage": "https://github.com/Donghoon2190/graphql_0112#readme"
+}
